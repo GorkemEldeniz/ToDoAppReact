@@ -135,6 +135,11 @@ input[type='checkbox']:checked::before{
   font-size:20px;
 }
 
+header > h3{
+  font-weight:lighter;
+}
+
+
 .delete-btn,.edit-btn{
   padding:5px;
   min-width:40px;

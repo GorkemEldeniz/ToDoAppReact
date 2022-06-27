@@ -5,11 +5,10 @@ const context = createContext()
 
 export default function Context({children}){
 
-    const [todos,setTodos] = useState(JSON.parse(localStorage.getItem('todos')) || [])
+    const [todos,setTodos] = useState(JSON.parse(localStorage.getItem('todo')) || [])
 
     useEffect(() => {
-        localStorage.setItem('todos',JSON.stringify(todos))
-        console.log('değişiklik kaydedildi..');
+        localStorage.setItem('todo',JSON.stringify(todos))
       },[todos])
 
     return (

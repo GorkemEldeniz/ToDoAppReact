@@ -9,7 +9,7 @@ function Form() {
   const handleSubmit = (e) => {
     e.preventDefault()
     const data =  {id : todos.length , time : Date.now(),checked:false, task : input , edit:false}
-    setTodos([...todos,data])
+    setTodos([data,...todos])
     setInput('')
   }     
 
